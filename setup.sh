@@ -5,7 +5,7 @@ sudo apt-get install vim pkg-config libtool build-essential gcc make openssl tcl
 git clone https://git-wip-us.apache.org/repos/asf/trafficserver.git
 
 cd trafficserver
-reconfigure -if
+autoreconf -if
 ./configure --prefix=/opt/ats --with-user=tserver
 make
 make check
